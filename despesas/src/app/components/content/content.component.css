@@ -1,0 +1,31 @@
+.container__content {
+  width: 50%;
+  height: 700px;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 10px;
+
+  display: flex;
+  justify-content: space-between; /* Espaço entre os itens */
+  align-items: center; /* Alinha os itens verticalmente ao centro */
+  gap: 20px; /* Espaçamento entre os itens */
+}
+.app-menu {
+  flex: 1; /* Cada item pode ser ajustado para tomar uma proporção igual */
+  max-width: 300px; /* Controla o tamanho máximo do componente */
+}
+
+.app-month {
+  flex: 2; /* Aqui você define a proporção maior para este item */
+  max-width: 500px; /* Controla o tamanho máximo */
+}
+
+.app-add-despesa {
+  flex: 1; /* Proporção igual ao app-menu */
+  max-width: 300px; /* Controla o tamanho máximo */
+}
