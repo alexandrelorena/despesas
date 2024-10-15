@@ -1,31 +1,26 @@
 .container__content {
-  width: 50%;
+  width: 70%; /* Ocupar a largura total */
   height: 700px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  padding-top: 10px;
-
-  display: flex;
-  justify-content: space-between; /* Espaço entre os itens */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-  gap: 20px; /* Espaçamento entre os itens */
+  gap: 10px; /* Espaço menor entre os itens */
 }
+
 .app-menu {
-  flex: 1; /* Cada item pode ser ajustado para tomar uma proporção igual */
-  max-width: 300px; /* Controla o tamanho máximo do componente */
+  flex: 1; /* O menu ocupará 1 parte do layout */
+  border: 1px solid grey;
 }
 
 .app-month {
-  flex: 2; /* Aqui você define a proporção maior para este item */
-  max-width: 500px; /* Controla o tamanho máximo */
+  flex: 7; /* O conteúdo principal ocupará mais espaço (3 partes) */
+  border: 1px solid grey;
 }
 
 .app-add-despesa {
-  flex: 1; /* Proporção igual ao app-menu */
-  max-width: 300px; /* Controla o tamanho máximo */
+  flex: 3; /* A despesa ocupará 1 parte */
+  border: 1px solid grey;
 }

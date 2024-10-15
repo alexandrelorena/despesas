@@ -1,6 +1,6 @@
 .container__footer {
-  border: 1px solid green;
-  width: 50%;
+  border: 1px solid grey;
+  width: 70%;
   height: 50px;
   margin: auto;
   display: flex;

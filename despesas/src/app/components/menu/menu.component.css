@@ -1,6 +1,8 @@
 .menu__container {
-  border: 1px solid black;
-  width: 150px;
-  height: 50px;
-  margin: left;
+  height: 700px;
+}
+
+.menu__container > p {
+  margin-top: 10px;
+  margin-left: 10px;
 }

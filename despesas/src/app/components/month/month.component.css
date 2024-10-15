@@ -1,4 +1,8 @@
 .container__month {
-  border: 1px solid green;
-  width: 100%;
+  height: 700px;
+}
+
+.container__month > p {
+  margin-top: 10px;
+  margin-left: 10px;
 }
