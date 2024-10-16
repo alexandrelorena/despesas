@@ -6,3 +6,9 @@
   margin-top: 10px;
   margin-left: 10px;
 }
+
+.menu__container > p {
+  color: var(
+    --primary-text-color
+  ); /* Texto será preto no tema claro e branco no tema escuro */
+}

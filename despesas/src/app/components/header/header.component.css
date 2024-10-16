@@ -6,15 +6,17 @@
   border: 1px solid grey;
   display: flex;
   flex-direction: row;
-  /* justify-content: space-evenly; */
+
   padding-top: 10px;
   gap: 30%;
+  color: var(--primary-text-color); /* Usando a variável CSS */
 }
 
 .header__container > button {
   border: 1px solid black;
   align-items: left;
   width: 150px;
+  color: var(--primary-text-color);
 }
 
 .header__component-title {
@@ -25,13 +27,8 @@
   padding-left: 100px;
 }
 
-/* .header__component > span {
-  border: 1ps solid blue;
-}
-
 p {
-  margin-top: 15px;
-  display: flex;
-  justify-content: center;
-  border: 1px solid red;
-} */
+  color: var(
+    --primary-text-color
+  ); /* Texto será preto no tema claro e branco no tema escuro */
+}

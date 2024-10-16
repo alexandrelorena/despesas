@@ -12,3 +12,12 @@ a {
   text-decoration: none;
   padding: 5px;
 }
+
+.container__footer > teste {
+  color: var(
+    --primary-text-color
+  ); /* Texto será preto no tema claro e branco no tema escuro */
+}
+.teste > p {
+  color: var(--primary-text-color);
+}

@@ -1,4 +1,5 @@
 /* You can add global styles to this file, and also import other style files */
+
 * {
   padding: 0;
   margin: 0;
@@ -7,6 +8,46 @@
   color: black;
 }
 
+/* Estilo padrão (modo claro) */
 body {
   background-color: white;
+  color: black;
+}
+
+/* Estilo para o modo escuro */
+.dark-theme {
+  background-color: #121212;
+  color: rgb(235, 29, 29);
+}
+
+/* Estilo global para modo claro */
+body.light-theme {
+  --primary-text-color: grey;
+  --icon-color: grey; /* Cor dos ícones no modo claro */
+}
+
+/* Estilo global para modo escuro */
+body.dark-theme {
+  --primary-text-color: white;
+  --icon-color: white; /* Cor dos ícones no modo escuro */
+}
+
+/* Estilo que será aplicado aos componentes */
+.component {
+  color: var(--primary-text-color);
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+/* Estilo dos ícones */
+.container__footer i {
+  color: var(--icon-color); /* Usando a variável CSS para a cor dos ícones */
+  transition: color 0.3s; /* Suaviza a transição da cor */
 }
