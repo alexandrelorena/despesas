@@ -6,16 +6,19 @@
   border: 1px solid grey;
   display: flex;
   flex-direction: row;
-
   padding-top: 10px;
   gap: 30%;
   color: var(--primary-text-color); /* Usando a variável CSS */
 }
 
 .header__container > button {
-  border: 1px solid black;
-  align-items: left;
-  width: 150px;
+  background-color: transparent; /* Remove fundo do botão */
+  border: none; /* Remove borda do botão */
+  padding: 0; /* Remove padding do botão */
+  width: 50px;
+  display: flex; /* Para centralizar os ícones */
+  justify-content: center;
+  align-items: center;
   color: var(--primary-text-color);
 }
 
@@ -31,4 +34,26 @@ p {
   color: var(
     --primary-text-color
   ); /* Texto será preto no tema claro e branco no tema escuro */
+}
+
+/* Estilos para ícones de toggle */
+#lightMode {
+  color: #ffae00; /* Sol amarelo */
+}
+
+#darkMode {
+  color: white; /* Lua branca */
+}
+
+#lightMode,
+#darkMode {
+  background-color: transparent; /* Remove fundo dos ícones */
+  border: none; /* Remove borda dos ícones */
+  box-shadow: none; /* Remove qualquer sombra */
+  padding: 0; /* Remove padding */
+  margin: 0; /* Remove margens indesejadas */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px; /* Tamanho padrão dos ícones */
 }
