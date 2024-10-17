@@ -1,14 +1,46 @@
 .menu__container {
   height: 700px;
+  /* Adiciona espaçamento ao redor do conteúdo */
 }
 
-.menu__container > p {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-
-.menu__container > p {
+.menu__container {
+  width: 80px;
+  justify-content: center;
+  align-items: center;
   color: var(
     --primary-text-color
-  ); /* Texto será preto no tema claro e branco no tema escuro */
+  ); /* Usa a variável de cor de texto para os temas */
+}
+
+.month-buttons {
+  width: 100%;
+  /* background-color: red; */
+  /* margin-left: 18px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinha os botões ao início do container */
+  align-items: flex-start; /* Alinha os itens à esquerda */
+  gap: 17.8px; /* Espaçamento entre os botões */
+}
+
+.month-buttons button {
+  background-color: var(
+    --primary-bg-color
+  ); /* Cor de fundo do botão, adaptável ao tema */
+  width: 100%;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: var(--primary-text-color); /* Cor do texto do botão */
+  font-size: 18px;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao mudar cores */
+}
+
+.month-buttons button:hover {
+  background-color: grey; /* Cor de fundo no hover */
+  width: 100%;
+  color: white; /* Cor do texto no hover */
+  font-weight: bold;
+  text-shadow: 0px 1px 0px #b4c2b2;
 }

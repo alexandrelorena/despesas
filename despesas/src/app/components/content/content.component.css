@@ -1,6 +1,6 @@
 .container__content {
   width: 70%; /* Ocupar a largura total */
-  height: 700px;
+  height: 678px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
@@ -11,7 +11,7 @@
 }
 
 .app-menu {
-  flex: 1; /* O menu ocupará 1 parte do layout */
+  flex: 0; /* O menu ocupará 1 parte do layout */
   border: 1px solid grey;
 }
 

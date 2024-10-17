@@ -1,3 +1,7 @@
 <div class="menu__container">
-  <p>menu</p>
+  <div class="month-buttons">
+    <button *ngFor="let month of months" (click)="selectMonth(month)">
+      {{ month }}
+    </button>
+  </div>
 </div>
