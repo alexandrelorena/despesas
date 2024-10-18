@@ -16,30 +16,34 @@
   width: 100%;
   /* background-color: red; */
   /* margin-left: 18px; */
+  margin-top: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start; /* Alinha os botões ao início do container */
   align-items: flex-start; /* Alinha os itens à esquerda */
-  gap: 17.8px; /* Espaçamento entre os botões */
+  gap: 20px; /* Espaçamento entre os botões */
 }
 
 .month-buttons button {
   background-color: var(
     --primary-bg-color
   ); /* Cor de fundo do botão, adaptável ao tema */
-  width: 100%;
-  border: none;
-  padding: 10px;
+  width: 80%;
+  margin-left: 8px;
+  border: 1px solid grey;
+  border-style: dotted;
+  border-radius: 5px;
+  padding: 8px;
   cursor: pointer;
   color: var(--primary-text-color); /* Cor do texto do botão */
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao mudar cores */
 }
 
 .month-buttons button:hover {
-  background-color: grey; /* Cor de fundo no hover */
-  width: 100%;
+  background-color: #1cb3ca; /* Cor de fundo no hover */
+  width: 80%;
   color: white; /* Cor do texto no hover */
   font-weight: bold;
   text-shadow: 0px 1px 0px #b4c2b2;
