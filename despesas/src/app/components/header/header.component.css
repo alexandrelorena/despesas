@@ -9,6 +9,7 @@
   padding-top: 10px;
   gap: 30%;
   color: var(--primary-text-color); /* Usando a variável CSS */
+  border-radius: 5px;
 }
 
 .header__container > button {

@@ -1,4 +1,32 @@
 <div class="container__add-despesa">
-  <p>add-despesa</p>
+  <div class="col-md-12 p-3 border">
+    <form [formGroup]="addDespesaForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <input type="text" class="form-control" formControlName="nome" placeholder="Adicione uma despesa" required
+          autocomplete="off" />
+      </div>
 
+      <div class="form-group">
+        <textarea class="form-control" formControlName="descricao" placeholder="Descrição:" required
+          autocomplete="off"></textarea>
+      </div>
+
+      <div class="form-group">
+        <input type="number" class="form-control" formControlName="valor" placeholder="Só números" required
+          autocomplete="off" />
+      </div>
+
+      <div class="form-group">
+        <input type="date" class="form-control" formControlName="vencimento" required />
+      </div>
+
+      <div class="form-group">
+        <input type="number" class="form-control" formControlName="repeticao" placeholder="Recorrência" required />
+      </div>
+
+      <div class="form-group text-center">
+        <button type="submit" class="btn btn-info">Adicionar</button>
+      </div>
+    </form>
+  </div>
 </div>
