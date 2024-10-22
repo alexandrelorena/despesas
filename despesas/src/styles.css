@@ -1,23 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/indigo-pink.css";
 
 * {
   padding: 0;
   margin: 0;
   border: 0;
   box-sizing: border-box;
-  color: black;
 }
 
 /* Estilo padrão (modo claro) */
 body {
   background-color: white;
-  color: black;
+  color: grey;
 }
 
 /* Estilo para o modo escuro */
 .dark-theme {
   background-color: #121212;
-  color: rgb(235, 29, 29);
+  color: white;
 }
 
 /* Estilo global para modo claro */
@@ -33,9 +33,9 @@ body.dark-theme {
 }
 
 /* Estilo que será aplicado aos componentes */
-.component {
+/* .component {
   color: var(--primary-text-color);
-}
+} */
 
 html,
 body {
@@ -43,7 +43,7 @@ body {
 }
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Estilo dos ícones */

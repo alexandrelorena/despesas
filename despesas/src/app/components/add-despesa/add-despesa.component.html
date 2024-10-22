@@ -2,30 +2,25 @@
   <div class="col-md-12 p-3 border">
     <form [formGroup]="addDespesaForm" (ngSubmit)="onSubmit()">
       <div class="form-group">
-        <input type="text" class="form-control" formControlName="nome" placeholder="adicione uma despesa" required
+        <input type="text" class="form-control" formControlName="nome" placeholder="insira o item da despesa" required
           autocomplete="off" />
       </div>
-
       <div class="form-group">
         <textarea class="form-control" formControlName="descricao" placeholder="descrição:" required
           autocomplete="off"></textarea>
       </div>
-
       <div class="form-group">
-        <input type="number" class="form-control" formControlName="valor" placeholder="somente números" required
+        <input type="number" class="form-control" formControlName="valor" placeholder="valor da despesa" required
           autocomplete="off" />
       </div>
-
       <div class="form-group">
         <input type="date" class="form-control" formControlName="vencimento" required />
       </div>
-
       <div class="form-group">
         <input type="number" class="form-control" formControlName="repeticao" placeholder="recorrência" required />
       </div>
-
       <div class="form-group text-center">
-        <button type="submit" class="btn btn-info">Adicionar</button>
+        <button type="submit" class="btn btn-info">salvar</button>
       </div>
     </form>
   </div>

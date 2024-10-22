@@ -1,10 +1,6 @@
 .menu__container {
-  height: 700px;
-  /* Adiciona espaçamento ao redor do conteúdo */
-}
-
-.menu__container {
   width: 80px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   color: var(
@@ -14,8 +10,6 @@
 
 .month-buttons {
   width: 100%;
-  /* background-color: red; */
-  /* margin-left: 18px; */
   margin-top: 12px;
   display: flex;
   flex-direction: column;
@@ -28,23 +22,28 @@
   background-color: var(
     --primary-bg-color
   ); /* Cor de fundo do botão, adaptável ao tema */
-  width: 80%;
-  margin-left: 8px;
-  border: 1px solid grey;
-  border-style: dotted;
-  border-radius: 5px;
-  padding: 8px;
-  cursor: pointer;
+  width: 80%; /* Tamanho dos botões */
+  margin-left: 8px; /* Margem à esquerda para alinhamento */
+  border: 1px solid grey; /* Borda dos botões */
+  border-style: dotted; /* Estilo da borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 8px; /* Preenchimento interno */
+  cursor: pointer; /* Cursor de pointer para indicar que é clicável */
   color: var(--primary-text-color); /* Cor do texto do botão */
-  font-size: 16px;
-  text-transform: uppercase;
+  font-size: 16px; /* Tamanho da fonte */
+  font-weight: bold;
+  text-transform: uppercase; /* Letras maiúsculas */
   transition: background-color 0.3s ease, color 0.3s ease; /* Transição suave ao mudar cores */
 }
 
 .month-buttons button:hover {
-  background-color: #1cb3ca; /* Cor de fundo no hover */
-  width: 80%;
-  color: white; /* Cor do texto no hover */
-  font-weight: bold;
-  text-shadow: 0px 1px 0px #b4c2b2;
+  color: #1cb3ca; /* Cor do texto no hover */
+  font-weight: bold; /* Negrito no hover */
+  text-shadow: 0px 1px 0px #b4c2b2; /* Sombra no texto */
+}
+
+.month-buttons button.selected {
+  background-color: #1cb3ca; /* Cor de fundo do mês selecionado */
+  color: white; /* Cor do texto no mês selecionado */
+  font-weight: bold; /* Negrito no mês selecionado */
 }

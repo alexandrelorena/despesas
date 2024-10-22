@@ -1,4 +1,5 @@
 import { Component, EventEmitter, Output } from '@angular/core';
+import { DateService } from '../../services/date.service';
 
 @Component({
   selector: 'app-menu',
@@ -37,8 +38,22 @@ export class MenuComponent {
   // ];
 
   @Output() monthSelected = new EventEmitter<string>();
+  selectedMonth: string = '';
 
+  constructor(private dateService: DateService) {} // Injeta o DateService
+
+  ngOnInit() {
+    this.setCurrentMonth(); // Chama o método para definir o mês atual
+  }
+
+  setCurrentMonth() {
+    const currentMonthIndex = new Date().getMonth(); // Obtém o índice do mês atual (0-11)
+    const currentMonth = this.months[currentMonthIndex]; // Obtém o nome do mês correspondente
+    this.selectMonth(currentMonth); // Chama o método para selecionar o mês atual
+  }
   selectMonth(month: string) {
-    this.monthSelected.emit(month);
+    this.selectedMonth = month; // Atualiza o mês selecionado
+    this.dateService.selectMonth(month); // Atualiza o mês no serviço
+    this.monthSelected.emit(month); // Emite o mês selecionado
   }
 }

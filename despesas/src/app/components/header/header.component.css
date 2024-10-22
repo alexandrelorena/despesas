@@ -21,6 +21,7 @@
   margin-left: 20px;
   margin-right: 10px;
   width: 50px;
+  cursor: pointer;
   display: flex; /* Para centralizar os ícones */
   justify-content: center;
   align-items: center;
@@ -40,7 +41,7 @@ p {
     --primary-text-color
   ); /* Texto será preto no tema claro e branco no tema escuro */
   font-size: 20px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* Estilos para ícones de toggle */

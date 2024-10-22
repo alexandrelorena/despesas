@@ -16,16 +16,18 @@ export class HeaderComponent {
     this.isDarkMode = isDarkTheme; // Atualiza o estado da variável
 
     // Aplica a classe correspondente ao tema ao carregar
-    if (this.isDarkMode) {
-      this.renderer.addClass(document.body, 'dark-theme');
-    } else {
-      this.renderer.addClass(document.body, 'light-theme');
-    }
+    this.applyTheme(this.isDarkMode);
   }
 
   toggleMode(): void {
     this.isDarkMode = !this.isDarkMode;
-    if (this.isDarkMode) {
+    // Salva o estado do tema no localStorage
+    localStorage.setItem('isDarkTheme', String(this.isDarkMode));
+    this.applyTheme(this.isDarkMode);
+  }
+
+  private applyTheme(isDark: boolean): void {
+    if (isDark) {
       this.renderer.addClass(document.body, 'dark-theme');
       this.renderer.removeClass(document.body, 'light-theme');
     } else {
