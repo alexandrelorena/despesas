@@ -8,6 +8,7 @@ import { Despesas } from '../models/despesas.model'; // Altere o caminho se nece
 })
 export class DespesasService {
   private apiUrl = 'http://localhost:8080/api/despesas'; // Ajuste a URL conforme necessário
+  getDespesasByMonth: any;
 
   constructor(private http: HttpClient) {}
 

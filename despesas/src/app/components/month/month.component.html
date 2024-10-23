@@ -1,4 +1,33 @@
 <div class="container__month">
+  <p>Total de despesas do mês de {{ getFullMonthName() }}: {{ totalDespesas | currency:'BRL' }}</p>
 
-  <p>Total de despesas do mês de {{ selectedMonth }} </p>
+  <table>
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Despesa</th>
+        <th>Valor</th>
+        <th>Vencimento</th>
+        <th>Status</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let despesa of despesas; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ despesa.descricao }}</td>
+        <td>{{ despesa.valor | currency:'BRL' }}</td>
+        <td>{{ despesa.vencimento | date: 'dd/MM' }}</td>
+        <td>
+          <span *ngIf="despesa.status === 'pago'" class="status-paid">✔</span>
+          <span *ngIf="despesa.status === 'pendente'" class="status-pending">⏳</span>
+          <span *ngIf="despesa.status === 'não pago'" class="status-unpaid">❌</span>
+        </td>
+        <td>
+          <button (click)="editarDespesa(despesa)">✏️</button>
+          <button (click)="removerDespesa(despesa)">❌</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </div>

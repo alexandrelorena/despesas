@@ -39,6 +39,8 @@ export class MenuComponent {
 
   @Output() monthSelected = new EventEmitter<string>();
   selectedMonth: string = '';
+  despesas: any;
+  totalDespesas: string | number = '';
 
   constructor(private dateService: DateService) {} // Injeta o DateService
 
